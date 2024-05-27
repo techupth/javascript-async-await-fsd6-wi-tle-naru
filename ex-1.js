@@ -13,4 +13,7 @@ let getJohnProfile = () => {
     );
   });
 };
-// Start coding here
+function databox(data) {(data) => {}
+  console.log(data)};
+
+getJohnProfile().then(databox);
