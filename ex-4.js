@@ -12,4 +12,9 @@ let getJohnProfile = () => {
     );
   });
 };
-// Start coding here
+
+async function isJohnProfile() {
+  const JohnProfile = await getJohnProfile();
+    console.log(JohnProfile);
+  }
+isJohnProfile();

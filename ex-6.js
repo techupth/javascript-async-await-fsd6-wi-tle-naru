@@ -32,4 +32,12 @@ let getJohnOrders = () => {
   });
 };
 
-// Start coding here
+async function isJohnData() {
+  const JohnProfile = await getJohnProfile();
+  console.log(JohnProfile);
+  const johnOrder = await getJohnOrders();
+  console.log(johnOrder);
+}
+isJohnData();
+
+
