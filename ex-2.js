@@ -12,4 +12,7 @@ let getJohnProfile = () => {
   });
 };
 
-// Start coding here
+function textAlert(data) {(data) => {}
+  console.log(data)};
+  
+getJohnProfile().catch(textAlert)
