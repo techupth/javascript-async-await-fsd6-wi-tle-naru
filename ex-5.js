@@ -1,5 +1,5 @@
 // Exercise #5
-let getJohnProfile = () => {
+let getJohnProfile = async () => {
   return new Promise(function (_, reject) {
     setTimeout(
       () =>
@@ -12,3 +12,12 @@ let getJohnProfile = () => {
   });
 };
 // Start coding here
+async function consoleLogOutput() {
+  try {
+    const result = await getJohnProfile();
+    console.log(result);
+  } catch (error) {
+    console.log(error);
+  }
+}
+consoleLogOutput();
